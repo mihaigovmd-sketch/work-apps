@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4f46e5" />
+      <stop offset="100%" stop-color="#312e81" />
+    </linearGradient>
+    <linearGradient id="noteGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="100%" stop-color="#f1f5f9" />
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f59e0b" />
+      <stop offset="100%" stop-color="#d97706" />
+    </linearGradient>
+  </defs>
+
+  <!-- Rounded App Tile -->
+  <rect x="16" y="16" width="480" height="480" rx="108" fill="url(#bgGrad)" />
+
+  <!-- Calendar Page Base -->
+  <rect x="96" y="120" width="320" height="296" rx="28" fill="url(#noteGrad)" />
+  
+  <!-- Calendar Header Bar -->
+  <path d="M 96 148 C 96 132.536 108.536 120 124 120 L 388 120 C 403.464 120 416 132.536 416 148 L 416 188 L 96 188 Z" fill="#6366f1" />
+
+  <!-- Calendar Rings / Clips -->
+  <rect x="156" y="96" width="24" height="48" rx="12" fill="#e2e8f0" stroke="#4f46e5" stroke-width="4" />
+  <rect x="332" y="96" width="24" height="48" rx="12" fill="#e2e8f0" stroke="#4f46e5" stroke-width="4" />
+
+  <!-- Calendar Lines / Checklist -->
+  <rect x="140" y="228" width="140" height="16" rx="8" fill="#cbd5e1" />
+  <rect x="140" y="268" width="200" height="16" rx="8" fill="#e2e8f0" />
+  <rect x="140" y="308" width="170" height="16" rx="8" fill="#e2e8f0" />
+  <rect x="140" y="348" width="120" height="16" rx="8" fill="#e2e8f0" />
+
+  <!-- Checkmark bullets -->
+  <circle cx="370" cy="236" r="14" fill="#10b981" />
+  <path d="M 364 236 L 368 240 L 376 232" fill="none" stroke="#ffffff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" />
+
+  <!-- Synology Note Sticky Reminder Badge (Folded corner note) -->
+  <g transform="translate(290, 260)">
+    <rect x="0" y="0" width="150" height="150" rx="20" fill="url(#accentGrad)" opacity="0.96" filter="drop-shadow(0 12px 20px rgba(0,0,0,0.3))" />
+    <path d="M 110 0 L 150 40 L 110 40 Z" fill="#b45309" opacity="0.5" />
+    <!-- Pin / Bell Icon inside sticky note -->
+    <path d="M 75 42 C 60 42 52 54 52 70 L 46 88 L 104 88 L 98 70 C 98 54 90 42 75 42 Z" fill="#ffffff" />
+    <circle cx="75" cy="100" r="8" fill="#ffffff" />
+    <path d="M 75 34 L 75 42" stroke="#ffffff" stroke-width="4" stroke-linecap="round" />
+  </g>
+</svg>

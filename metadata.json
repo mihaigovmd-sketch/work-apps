@@ -1,0 +1,6 @@
+{
+  "name": "Daily Notes & Calendar",
+  "description": "Daily notes, Synology-style sticky reminders, and daily snapshots synced with Google Drive, plus appointments & meetings scheduled via Google Calendar.",
+  "requestFramePermissions": ["microphone"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
